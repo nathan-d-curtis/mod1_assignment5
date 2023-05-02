@@ -12,54 +12,58 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-<title>Sign-in to CJJF</title>
+<title>Sign-out of CJJF</title>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg center-nav navbar-light bg-light fixed-top border-bottom">
-  <div class="container flex-lg-row flex-nowrap align-items-center">
-    <div class="navbar-brand w-100">
-      <a href="index.html">
-        <img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" width="200"/>
-      </a>
-    </div>
-    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-      <div class="offcanvas-header d-lg-none">
-        <a href="index.html"><img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" /></a>
-        <button type="button" class="btn-close btn-close-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+      <div class="navbar-brand w-100">
+        <a href="index.html">
+          <img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" width="200"/>
+        </a>
       </div>
-      <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-          <li class="nav-item"><a class="nav-link" href="location.html">LOCATION</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+        <div class="offcanvas-header d-lg-none">
+          <a href="index.html"><img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" /></a>
+          <button type="button" class="btn-close btn-close-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="location.html">LOCATION</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-other w-100 d-flex ms-auto">
+        <ul class="navbar-nav flex-row align-items-center ms-auto">
+          <li class="nav-item d-none d-md-block">
+            <a href="signin.html" class="btn btn-sm btn-danger rounded-pill">SIGN-IN</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a href="signout.html" class="btn btn-sm btn-danger rounded-pill">SIGN-OUT</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <button class="hamburger offcanvas-nav-btn"><span></span></button>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="navbar-other w-100 d-flex ms-auto">
-      <ul class="navbar-nav flex-row align-items-center ms-auto">
-        <li class="nav-item d-none d-md-block">
-          <a href="signin.html" class="btn btn-sm btn-danger rounded-pill">SIGN-IN</a>
-        </li>
-        <li class="nav-item d-none d-md-block">
-          <a href="signout.html" class="btn btn-sm btn-danger rounded-pill">SIGN-OUT</a>
-        </li>
-        <li class="nav-item d-lg-none">
-          <button class="hamburger offcanvas-nav-btn"><span></span></button>
-        </li>
-      </ul>
-    </div>
-  </div>
 </nav>
 <!-- /navbar -->
+
+<!-- Sign Out Message -->
+<h1 class="h1 mt-5 mb-3 fw-bold text-center">You have successfully signed out.</h1>
+<!-- /sign out -->
 
 <!-- Sign-in Section -->
 <main class="form-signin">
     <form>
       <img class="mt-4 mb-4" src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" width="200">
-      <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
+      <h1 class="h3 mb-3 fw-normal">Sign in Again Below</h1>
   
       <div class="form-floating">
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">

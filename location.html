@@ -18,37 +18,40 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg center-nav navbar-light bg-light fixed-top border-bottom">
-    <div class="container flex-lg-row flex-nowrap align-items-center">
-      <div class="navbar-brand w-100">
-        <a href="index.html">
-          <img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" width="200"/>
-        </a>
+  <div class="container flex-lg-row flex-nowrap align-items-center">
+    <div class="navbar-brand w-100">
+      <a href="index.html">
+        <img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" width="200"/>
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+      <div class="offcanvas-header d-lg-none">
+        <a href="index.html"><img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" /></a>
+        <button type="button" class="btn-close btn-close-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-        <div class="offcanvas-header d-lg-none">
-          <a href="index.html"><img src="static/CJJF-TX.png" alt="CJJF Jiu-Jitsu Academy" /></a>
-          <button type="button" class="btn-close btn-close-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-            <li class="nav-item"><a class="nav-link" href="location.html">LOCATION</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="navbar-other w-100 d-flex ms-auto">
-        <ul class="navbar-nav flex-row align-items-center ms-auto">
-          <li class="nav-item d-none d-md-block">
-            <a href="signin.html" class="btn btn-sm btn-danger rounded-pill">SIGN-IN</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <button class="hamburger offcanvas-nav-btn"><span></span></button>
-          </li>
+      <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="location.html">LOCATION</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
         </ul>
       </div>
     </div>
+    <div class="navbar-other w-100 d-flex ms-auto">
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+        <li class="nav-item d-none d-md-block">
+          <a href="signin.html" class="btn btn-sm btn-danger rounded-pill">SIGN-IN</a>
+        </li>
+        <li class="nav-item d-none d-md-block">
+          <a href="signout.html" class="btn btn-sm btn-danger rounded-pill">SIGN-OUT</a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <button class="hamburger offcanvas-nav-btn"><span></span></button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <!-- /navbar -->
 
